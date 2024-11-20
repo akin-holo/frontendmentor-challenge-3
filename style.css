@@ -31,7 +31,7 @@ main {
 .container > * {
    margin: 1em;
 }
-.this {
+.shapes-wrapper {
    position: relative;
    width: 350px;
    height: 203px;
@@ -80,6 +80,18 @@ main {
    z-index: 8;
 }
 
+
+
+.trangle-shape {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   width: 100px;
+   height: 100px;
+   background-color: #000;
+   clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+   border-bottom-right-radius: 5px;
+}
 
 .learning {
    display: block;
