@@ -69,27 +69,6 @@ main {
    border-bottom-right-radius: 5px;
 }
 
-.clipped-shape-c {
-   position: absolute;
-   left: -1.7%;
-   bottom: -15%; 
-   width: 120px;
-   height: 100px;
-   background-color: #000;
-   border-radius: 0 30% 10% 60%;
-   transform: rotate(180deg);
-}
-.clipped-shape-t {
-   position: absolute;
-   left: 0;
-   bottom: 0;
-   width: 100px;
-   height: 100px;
-   background-color: #000;
-   clip-path: polygon(0% 30%, 0% 100%, 100% 100%);
-   border-radius: 0 0 0 5px;  
-}
-
 
 .black-shape {
    position: absolute;
@@ -113,6 +92,7 @@ main {
    transform:rotate(-45deg);
    z-index: 8;
 }
+
 .black-border-top-curve {
    position: absolute;
    top: 23%;
@@ -136,6 +116,28 @@ main {
    transform:rotate(135deg);
 }
 
+
+.clipped-shape-c {
+   position: absolute;
+   left: -1.7%;
+   bottom: -15%; 
+   width: 140px;
+   height: 100px;
+   background-color: #000;
+   border-radius: 0 0 0 80%;
+   transform: rotate(180deg);
+}
+.bottom-left-shape hr {
+   position: absolute;
+   bottom: 5%;
+   left: -5%;
+   color: #fff;
+   width: 220px;
+   height: 2px;
+   background-color: #fff;
+   border: none;
+   transform: rotate(33deg);
+}
 
 /* .vert {
    width: 300px;
