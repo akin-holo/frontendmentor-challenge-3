@@ -37,6 +37,7 @@ main {
    height: 203px;
    background-color: hsl(47, 88%, 63%);
    border-radius: 5px;
+   overflow: hidden;
 }
 .tag-sign {
    position: absolute; 
@@ -56,6 +57,39 @@ main {
 .entity-style {
    font-size: 3em;
 }
+
+.trangle-shape {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   width: 100px;
+   height: 100px;
+   background-color: #000;
+   clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+   border-bottom-right-radius: 5px;
+}
+
+.clipped-shape-c {
+   position: absolute;
+   left: -1.7%;
+   bottom: -15%; 
+   width: 120px;
+   height: 100px;
+   background-color: #000;
+   border-radius: 0 30% 10% 60%;
+   transform: rotate(180deg);
+}
+.clipped-shape-t {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100px;
+   height: 100px;
+   background-color: #000;
+   clip-path: polygon(0% 30%, 0% 100%, 100% 100%);
+   border-radius: 0 0 0 5px;  
+}
+
 
 .black-shape {
    position: absolute;
@@ -96,45 +130,19 @@ main {
    right: 12%;
    width: 153px;
    height: 53px;
-   /* border-left: 2px solid #000; */
    border-bottom: 2px solid #000;
-   /* border-top: 2px solid #000; */
    border-right: 2px solid #000;
-
-
    border-bottom-right-radius: 25px;
    transform:rotate(135deg);
-   /* position: absolute;
-   
-   right: 12%;
-   bottom: 23%;
-   width: 160px;
-   height: 75px;
-   border-right: 2px solid #000;
-   border-bottom: 2px solid #000;
-   border-bottom-right-radius: 25px;
-   transform:rotateY(100deg);
-   transform:rotateX(40deg);
-   transform:rotateZ(150deg); */
 }
 
 
-.vert {
+/* .vert {
    width: 300px;
    height: 20px;
    color: #fff;
    background-color: #fff;
-}
-.trangle-shape {
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   width: 100px;
-   height: 100px;
-   background-color: #000;
-   clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
-   border-bottom-right-radius: 5px;
-}
+} */
 
 .learning {
    display: block;
